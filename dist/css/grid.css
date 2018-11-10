@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box; }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100% 1fr 250px; }
+
+.image-sazes {
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  width: 100%; }
+
+.header {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  background-image: url("../images/7.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; }
+  .header__top-menu {
+    height: 85px;
+    padding-top: -20px; }
+  .header__top-menu * {
+    display: inline; }
+  .header__menu-list {
+    display: inline;
+    width: 190px;
+    height: 10px;
+    margin: 0 20px 0 20px; }
+  .header__menu-link {
+    text-decoration: none;
+    color: #4d4959;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.6px; }
+  .header__menu-logo {
+    width: 94px;
+    height: 85px;
+    position: relative;
+    top: 30px;
+    left: 20px; }
+
+.main-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: fr fr 600px 600px 470px 530px 200px 470px; }
+
+.message-1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  background-color: #f7f7f7;
+  padding: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.photoblock-1 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: row; }
+  .photoblock-1__left-side {
+    width: 65%; }
+  .photoblock-1__left-side img {
+    justify-content: flex-start;
+    width: 100%;
+    background-size: cover; }
+  .photoblock-1__right-side {
+    justify-content: flex-start;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    max-height: 600px; }
+  .photoblock-1__small-message {
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2; }
+  .photoblock-1__small-image {
+    display: flex;
+    width: 100%;
+    background-size: cover;
+    flex-grow: 1;
+    align-items: flex-end; }
+
+.photoblock-2 {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4; }
+
+.photoblock-3 {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5; }
+
+.message-2 {
+  grid-column: 1 / 2;
+  grid-row: 5 / 6; }
+
+.photoblock-4 {
+  grid-column: 1 / 2;
+  grid-row: 6 / 7; }
+
+.message-3 {
+  grid-column: 1 / 2;
+  grid-row: 7 / 8; }
+
+.footer {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4; }
